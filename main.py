@@ -38,7 +38,7 @@ def get_route_stops(route_id: str):
 
             return route_stops
 
-@app.get("stops")
+@app.get("stops/{stop_id}")
 def get_stop(stop_id: str):
     return stops[stop_id]
 
