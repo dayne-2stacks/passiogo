@@ -38,10 +38,11 @@ def get_route_stops(route_id: str):
 
             return route_stops
 
-@app.get("stops/{stop_id}")
+@app.get("/stops/{stop_id}")
 def get_stop(stop_id: str):
     return stops[stop_id]
 
 if __name__ == "__main__":
-    a = get_route_stops('70692')
+    a = get_stop('70712')
     print(a)
+    
